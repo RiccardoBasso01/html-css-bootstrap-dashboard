@@ -1,9 +1,11 @@
 /* FUNZIONALITÀ */
 :root{
     --header-bgc: white;
-    --sidebar-bgc: var(var(--dark-blue));
+    --sidebar-bgc: var(--dark-blue);
     --blue: #1b72e8;
     --dark-blue: #051e34;
+
+    --debug: #c58af9;
     
     --font-size-s:0.6rem;
     --font-size-m:0.8rem;
@@ -11,4 +13,47 @@
     --font-size-xl:2rem;
     --font-size-xxl:3.5rem;
     --font-size-xxxl:5rem;
+}
+
+/* TODO bordi e altezze da rimuovere */
+.b-l{
+    border: 3px solid var(--debug);
+}
+.b-m{
+    border: 2px solid var(--debug);
+}
+.b-s{
+    border: 1px solid var(--debug);
+}
+.b-x{
+    border: 1px dashed var(--debug);
+}
+.h20{
+    height: 200px!important;
+}
+.h10{
+    height: 50px;
+}
+
+/* header */
+.main-section header{
+    background-color: var(--blue);
+}
+
+/* main */
+main{
+    min-height: calc(100vh - 80px);
+}
+
+/* ? sidebar e allargamento sidebar */
+.sidebar{
+    background-color: var(--sidebar-bgc);
+    width: 50px;
+}
+
+@media screen and (min-width: 768px){
+    .sidebar{
+        background-color: var(--sidebar-bgc);
+        width: 250px;
+    }
 }

@@ -19,11 +19,65 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        
-    </header>
-    <main>
+    <!-- HEADER principale-->
+    <header class="sticky-top b-l">
+        <nav class="navbar bg-light">
+            <!-- logo -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/Icon.png" width="30" height="auto">
+              </a>
 
+              <!-- barra di ricerca -->
+              <form class="d-flex flex-grow-1" role="search">
+                <div class="input-group">
+                    <label class="input-group-text" for="search">icona</label>
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </div>
+              </form>
+
+              <!-- lista icone finali -->
+              <div>
+                <i class="fa-solid fa-bell"></i>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main class="d-flex b-l">
+        <!-- sidebar -->
+        <div class="sidebar b-m">
+        </div>
+
+        <div class="main-section w-100 b-m">
+            <!-- HEADER secondario-->
+            <header>
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-3">
+                        <div class="col order-sm-1 b-x h10"><h1>1</h1></div>
+                        <div class="col b-x h10"><h1>2</h1></div>
+                        <div class="col b-x h10"><h1>3</h1></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- contenuti principali -->
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 b-s">
+                        <div class="col b-x h20"><h1>1</h1></div>
+                        <div class="col b-x h20"><h1>2</h1></div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 b-s">
+                        <div class="col b-x h20"><h1>3</h1></div>
+                        <div class="col b-x h20"><h1>4</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
