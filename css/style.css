@@ -4,8 +4,10 @@
     --sidebar-bgc: var(--dark-blue);
     --blue: #1b72e8;
     --dark-blue: #051e34;
-
+    --grey: #e5e5e5;
+    --dark-grey: #666666;
     --debug: #c58af9;
+
     
     --font-size-s:0.6rem;
     --font-size-m:0.8rem;
@@ -35,9 +37,46 @@
     height: 50px;
 }
 
+/* TODO immagine fluida */
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.bgc-grey{
+    background-color: var(--grey);
+}
+
+.bgc-dark-grey{
+    background-color: var(--dark-grey);
+}
+
+/* effetti */
+/* focus barra di ricerca */
+.form-control:focus{
+    border: 1px solid #53a1ff;
+    outline: 0;
+    box-shadow: inset 0 0 5px var(--dark-grey);
+}
+
 /* header */
 .main-section header{
     background-color: var(--blue);
+}
+
+.input-group-text{
+    color: white;
+    border-color: var(--dark-grey);
+}
+
+/* parte destra */
+.fa-bell{
+    color: #ff8f00;
+}
+
+.menu-lg{
+    margin: 0 1rem;
+    color: #5b5858;
 }
 
 /* main */
