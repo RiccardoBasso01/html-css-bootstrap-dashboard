@@ -76,6 +76,7 @@ span{
 
 a{
     color: white;
+    text-decoration: none   ;
 }
 
 .bgc-grey{
@@ -103,6 +104,22 @@ a{
 main + header{
     height: var(--h-header);
 }
+
+/* dropdown */
+.dropdown-toggle{
+    border: none;
+    background-color: transparent;
+}
+
+.dropstart .dropdown-toggle:before{
+    display: none;
+}
+
+.dropstart .dropdown-menu[data-bs-popper] {
+    top: 25px;
+    right: 10px;
+}
+
 
 /* header secondario */
 .main-section header{
