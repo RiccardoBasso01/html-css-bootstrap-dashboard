@@ -105,6 +105,11 @@ main + header{
     height: var(--h-header);
 }
 
+/* parte destra */
+.fa-bell{
+    color: #ff8f00;
+}
+
 /* dropdown */
 .dropdown-toggle{
     border: none;
@@ -117,9 +122,14 @@ main + header{
 
 .dropstart .dropdown-menu[data-bs-popper] {
     top: 25px;
-    right: 10px;
+    right: 5px;
 }
 
+
+.menu-lg{
+    margin: 0 1rem;
+    color: #5b5858;
+}
 
 /* header secondario */
 .main-section header{
@@ -131,15 +141,19 @@ main + header{
     border-color: var(--dark-grey);
 }
 
-/* parte destra */
-.fa-bell{
-    color: #ff8f00;
+/* !FORM */
+#offcanvasNavbar{
+    width: 100%;
+
 }
 
-.menu-lg{
-    margin: 0 1rem;
-    color: #5b5858;
+/* ? gestione della width del form  */
+@media screen and (min-width: 768px){
+    #offcanvasNavbar{
+        width: 650px;
+    }
 }
+
 
 /* main */
 .main-section{
