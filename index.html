@@ -71,12 +71,40 @@
 
         <div class="main-section w-100 b-m">
             <!-- HEADER secondario-->
-            <header>
+            <header class="text-white">
                 <div class="container-fluid">
                     <div class="row row-cols-1 row-cols-sm-3">
-                        <div class="col order-sm-1 b-x h10"><h1>1</h1></div>
-                        <div class="col b-x h10"><h1>2</h1></div>
-                        <div class="col b-x h10"><h1>3</h1></div>
+                        <!-- !prima col-->
+                        <div class="col col-lg-3 order-sm-1 b-x">
+                            <div class=" d-flex align-items-center gap-4 py-3">
+                                <span>Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <!-- !seconda col-->
+                        <div class="col col-lg-6 b-x py-3">
+                            <h2>Boolean <span class="badge rounded-pill">Piano blaze</span></h2>
+                           
+                            <!-- utilizzo flex per un allineamento più preciso-->
+                            <div class="flex-centered">
+                                <span class="badge rounded-pill me-2">3 App</span>
+                                <!-- doppia freccia -->
+                                <div class="me-2"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right ms-neg"></i></div>
+                                <!-- simbolo + -->
+                                <span class="badge rounded-pill circle-pill d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                                <!-- insieme di badge -->
+                                <div class="d-none d-lg-flex">
+                                    <span class="badge rounded-pill me-2">Boolean mobile app</span>
+                                    <span class="badge rounded-pill me-2">Boolean web app</span>
+                                    <span class="badge rounded-pill me-2">Boolean blog app</span>
+                                </div>
+                            </div>       
+                        </div>
+                        <!-- !terza col-->
+                        <div class="col col-lg-3 b-x py-3">
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <h2>125</h2>
+                        </div>
                     </div>
                 </div>
             </header>
