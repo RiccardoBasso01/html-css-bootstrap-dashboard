@@ -185,6 +185,11 @@ td{
     text-align: left;
 }
 
+/* Ultima card */
+.card-link{
+    color: rgb(13,110,253);
+}
+
 /* ? sidebar e allargamento sidebar */
 .sidebar{
     background-color: var(--sidebar-bgc);
