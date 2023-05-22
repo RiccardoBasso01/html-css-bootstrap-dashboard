@@ -99,16 +99,14 @@ a{
 }
 
 /* header */
+/* header principale */
 main + header{
     height: var(--h-header);
 }
 
+/* header secondario */
 .main-section header{
     background-color: var(--blue);
-}
-
-.main{
-    overflow: auto;
 }
 
 .input-group-text{
@@ -129,7 +127,7 @@ main + header{
 /* main */
 .main-section{
     height: calc(100vh - var(--h-header));
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .circle-pill{
