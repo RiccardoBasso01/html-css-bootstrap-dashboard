@@ -27,6 +27,7 @@
     /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* TODO bordi e altezze da rimuovere */
@@ -139,6 +140,19 @@ header .rounded-pill{
     background-color: var(--dark-blue);
     font-size: 0.7rem;
     font-weight: 500;
+}
+
+/* !TABELLA */
+tr *:not(:first-child){
+    text-align: center;
+}
+
+th:not(:first-child){
+    max-width: 105px;
+}
+
+td{
+    min-height: 55px;
 }
 
 /* sidebar */
