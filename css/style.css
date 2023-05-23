@@ -10,7 +10,7 @@
     --debug: #c58af9;
 
     --h-header: 56px;
-    --h40: 40px;
+    --h-footer-sidebar: 40px;
 
     
     --font-size-s:0.6rem;
@@ -77,6 +77,7 @@ span{
 a{
     color: white;
     text-decoration: none   ;
+    display: inline-block;
 }
 
 .bgc-grey{
@@ -92,20 +93,41 @@ a{
 }
 
 /* effetti */
-/* focus barra di ricerca */
-.form-control:focus{
+/* focus barre di ricerca */
+.form-control:focus,
+.form-select:focus{
     border: 1px solid #53a1ff;
     outline: 0;
     box-shadow: inset 0 0 5px var(--dark-grey);
 }
 
-/* header */
+/* hover link barra laterale */
+.upper-sidebar a:hover,
+.footer-sidebar a:hover{
+    background-color: grey;
+}
+
+/* hover riga tabella */
+tbody tr:hover{
+    background-color: rgb(213, 213, 213);
+}
+
+/* HEADER */
 /* header principale */
 main + header{
     height: var(--h-header);
 }
 
-/* parte destra */
+header:not(main header) .input-group-text{
+    color: white;
+    border-color: var(--dark-grey);
+}
+
+/* 1px di bordo all' header che verrà poi sottratto al main*/
+header:not(main header){
+    border-bottom: 1px solid var(--grey) ;
+} 
+/* colore campanella */
 .fa-bell{
     color: #ff8f00;
 }
@@ -126,7 +148,7 @@ main + header{
 }
 
 
-.menu-lg{
+.menu-lg a{
     margin: 0 1rem;
     color: #5b5858;
 }
@@ -134,11 +156,6 @@ main + header{
 /* header secondario */
 .main-section header{
     background-color: var(--blue);
-}
-
-.input-group-text{
-    color: white;
-    border-color: var(--dark-grey);
 }
 
 /* !FORM */
@@ -156,8 +173,11 @@ main + header{
 
 
 /* main */
+main{
+    height: calc(100vh - (var(--h-header) + 1px));
+}
+
 .main-section{
-    height: calc(100vh - var(--h-header));
     overflow-y: auto;
 }
 
@@ -184,14 +204,19 @@ td{
     min-height: 55px;
 }
 
+/* Ultima card */
+.card-link{
+    color: rgb(13,110,253);
+}
+
 /* sidebar */
 .upper-sidebar{
-    height: calc(100vh - (var(--h-header) + var(--h40)));
+    height: calc(100% - var(--h-footer-sidebar));
     padding: 10px;
 }
 
 .footer-sidebar{
-    height: var(--h40);
+    height: var(--h-footer-sidebar);
     padding:0 10px;
 }
 
@@ -204,20 +229,17 @@ td{
 
 .upper-sidebar i,
 .footer-sidebar i{
-    width:20px;
+    padding: 10px;
+    min-width:20px;
 }
 
 .upper-sidebar span,
 .footer-sidebar span{
-    padding-left: 10px;
-    width: 70px;
+    min-width: 70px;
     text-align: left;
 }
 
-/* Ultima card */
-.card-link{
-    color: rgb(13,110,253);
-}
+
 
 /* ? sidebar e allargamento sidebar */
 .sidebar{

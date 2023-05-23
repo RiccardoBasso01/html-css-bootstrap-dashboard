@@ -45,11 +45,13 @@
                 </form>
 
                 <!-- lista icone finali -->
-                <div class="menu-lg d-none d-lg-flex gap-4">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-circle-question"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+
+                <ul class="menu-lg d-none d-lg-flex">
+                    <li><a href="#"><i class="fa-solid fa-list-ul"></i></a></li>
+                    <li><a href="#faq"><i class="fa-solid fa-circle-question"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                </ul>
+
                 <div>
                     <!-- Default dropstart button -->
                     <div class="dropstart">
@@ -73,8 +75,11 @@
         <div class="sidebar text-white text-center">
             <div class="upper-sidebar">
                 <ul>
-                    <li class="d-lg-flex"><a href="#"><i class="fa-solid fa-house"></i><span
-                                class="d-none d-lg-inline-block">Home</span></a></li>
+                    <li class="d-lg-flex">
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i><span class="d-none d-lg-inline-block">Home</span>
+                        </a>
+                    </li>
                     <li class="d-lg-flex"><a href="#"><i class="fa-solid fa-chart-simple"></i><span
                                 class="d-none d-lg-inline-block">Stat</span></a></li>
                     <li class="d-lg-flex"><a href="#"><i class="fa-solid fa-signal"></i><span
@@ -99,13 +104,6 @@
                         <div class="col col-lg-3 order-sm-1 ">
                             <div class=" d-flex align-items-center gap-4 py-3">
                                 <span>Nuovo Studente</span>
-
-                                <!-- <button class="navbar-toggler btn btn-outline-light" type="button"
-                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"><i class="fa-solid fa-plus"></i></span>
-                                </button> -->
-
                                 <div class="navbar text-white">
                                     <div>
                                         <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
@@ -142,7 +140,7 @@
                                                             <div class="col-12 col-md-6 mb-3">
                                                                 <label for="email" class="form-label">Email</label>
                                                                 <div class="input-group">
-                                                                    <span class="input-group-text text-black"
+                                                                    <span class="input-group-text text-black bgc-grey"
                                                                         id="basic-addon1">@</span>
                                                                     <input type="text" class="form-control" id="email"
                                                                         aria-describedby="basic-addon1">
@@ -262,7 +260,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px"> Classe 75</td>
                                                 <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -275,7 +273,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 76</td>
                                                 <td class="d-none d-md-table-cell">16 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -288,7 +286,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 77</td>
                                                 <td class="d-none d-md-table-cell">17 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -303,7 +301,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 78</td>
                                                 <td class="d-none d-md-table-cell">18 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -316,7 +314,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 79</td>
                                                 <td class="d-none d-md-table-cell">19 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -329,7 +327,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 80</td>
                                                 <td class="d-none d-md-table-cell">20 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -342,7 +340,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 81</td>
                                                 <td class="d-none d-md-table-cell">21 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -355,7 +353,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="flex-centered"><img src="img/class-avatar.jpg" alt="img"
+                                                <td class="flex-centered"><img src="img/class-avatar.png" alt="img"
                                                         width="30px">Classe 82</td>
                                                 <td class="d-none d-md-table-cell">22 Feb 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -375,7 +373,7 @@
 
                         <!-- !FAQ card 2 -->
                         <div class="col my-3">
-                            <div class="card">
+                            <div class="card" id="faq">
                                 <div class="card-header">
                                     <h3>FAQ</h3>
                                 </div>
